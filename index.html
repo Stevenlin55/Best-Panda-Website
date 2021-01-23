@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Best Panda Chinese Restaurant Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h1>Best Panda Chinese Restaurant</h1>
+            <div class = "navbar">
+                <ul>
+                    <li class="currentTab"><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="container-2">
+        <div class="box-2"> 
+            <h2>4949 Grand Ave., Suite 4A</h2>
+            <h3>Gurnee, IL 60031</h3>
+            <h4>(Located in Grand Mall Plaza)</h4>
+        </div>
+        <!-- google maps 
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.5859639176183!2d-87.92700218454331!3d42.372662279186024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9207ca7c66b3%3A0xeabb10d862c9c69a!2sBest%20Panda%20Chinese%20Restaurant!5e0!3m2!1sen!2sus!4v1610812083755!5m2!1sen!2sus" width="1550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        -->
+    </div>
+     <img class="food-img" src="img/noodles.png" alt="Lo Mein">
+
+     <div class="current-status">
+        <h1><span id="open-sign"></span></h1>
+        <h1><span id="closed-sign"></span></h1>
+        <p><span id="date"></span></p>  
+        <P><span id="time"></span></P>
+        <script>
+           var today =  new Date();
+           var day = today.getDay();
+           var hour = today.getHours();
+           var minute = today.getMinutes();
+           var weekdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+           
+           let openingHours = new Map([
+               ["Sunday", "12:00P.M — 9:00P.M"],
+               ["Monday", "Closed"],
+               ["Tuesday", "11:30A.M — 9:00P.M"],
+               ["Wednesday", "11:30A.M — 9:00P.M"],
+               ["Thursday", "11:30A.M — 9:00P.M"],
+               ["Friday", "11:30A.M — 9:30P.M"],
+               ["Saturday", "11:30A.M — 9:30P.M"],
+            ]);
+
+            let hourItOpens = new Map([
+               ["Sunday", 12],
+               ["Monday", 12],
+               ["Tuesday", 11],
+               ["Wednesday",11],
+               ["Thursday", 11],
+               ["Friday", 11],
+               ["Saturday", 11],
+            ]);
+
+            
+            let minuteItOpens = new Map([
+               ["Sunday", 0],
+               ["Monday", 0],
+               ["Tuesday", 30],
+               ["Wednesday", 30],
+               ["Thursday", 30],
+               ["Friday", 30],
+               ["Saturday", 30],
+            ]);
+
+            let minuteItCloses = new Map([
+               ["Sunday",0],
+               ["Monday", 0],
+               ["Tuesday", 0],
+               ["Wednesday",0],
+               ["Thursday", 0],
+               ["Friday", 30],
+               ["Saturday", 30],
+            ]);
+            if (day === 1 || hour <= hourItOpens && minute < minuteItOpens || hour >= 9 && minute > minuteItCloses) {
+               document.getElementById("closed-sign").innerHTML = "CLOSED";
+           }
+           else {
+                document.getElementById("open-sign").innerHTML = "OPEN";
+           }
+
+           document.getElementById("date").innerHTML = weekdays[day]; 
+           document.getElementById("time").innerHTML = openingHours.get(weekdays[day]);
+       </script>
+     </div> 
+
+</body>
+
+</html>
