@@ -82,19 +82,22 @@
                ["Friday", 30],
                ["Saturday", 30],
             ]);
-            if (day === 1 || hour <= hourItOpens && minute < minuteItOpens || hour >= 9 && minute > minuteItCloses) {
+            if (day === 1 || hour <= hourItOpens.get(weekdays[day]) || hour >= 21) {
                document.getElementById("closed-sign").innerHTML = "CLOSED";
            }
            else {
-                document.getElementById("open-sign").innerHTML = "OPEN";
+                document.getElementById("open-sign").innerHTML = "OPEN" + hour + minute;
            }
 
            document.getElementById("date").innerHTML = weekdays[day]; 
            document.getElementById("time").innerHTML = openingHours.get(weekdays[day]);
        </script>
-       <p>hi</p>
      </div> 
-
+     <div class="main">
+        <img class="phone-img" src="img/phone.png" alt="Phone">
+        <h2>Phone:(847) 662-0066</h2>
+        <h2>(847) 662-0108</h2>
+    </div>
 </body>
 
 </html>

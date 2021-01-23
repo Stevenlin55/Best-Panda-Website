@@ -120,5 +120,17 @@ body{
     color: rgb(209, 12, 12);
 }
 
+.phone-img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.main h1{
+    margin-top: 10%;
+}
+
+
 
 
