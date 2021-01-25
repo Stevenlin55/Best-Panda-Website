@@ -114,26 +114,60 @@ body{
 .current-status h1 {
     text-align: center;
     color: green;
+    font-weight: 900;
+    font-size: 50;
+    margin-bottom: -3%;
 }
 #closed-sign {
     text-align: center;
     color: rgb(209, 12, 12);
 }
 
+.current-status p {
+    padding-top: 1%;
+    font-size: 20;
+   
+}
+
 .phone-img {
     float: left;
+    position: relative;
+    bottom: 10px;
     width:  100px;
     height: 100px;
     object-fit: cover;
 }
 
-.main h1 {
+.phone-container {
+   margin-top: 7%;
+   margin-right:7%;
+   margin-left: 10%;
+   margin-bottom: 5%;
+
+}
+.phone-container h2 {
+    margin-left: 5%;
+}
+.phone-container h1 {
     margin: 5%;
     text-align:left;
 }
 
+.delivery-container {
+    margin-left: 11%;
+}
 
 
+.grubhub-img {
+    width:  200px;
+    height: 200px;
+}
 
 
-
+.doordash-img {
+    position: relative;
+    top: 30px;
+    left: 100px;
+    width: 600;
+    height: 236;
+}
