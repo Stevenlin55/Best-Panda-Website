@@ -155,14 +155,21 @@ body{
     text-align:left;
 }
 
-.delivery-container {
-    margin-left: 11%;
+
+
+.delivery-container h1 {
+   text-align: center;
+   font-size: 4vw;
+}
+.delivery-container a {
+    text-decoration: none;
 }
 
-
 .grubhub-img {
+    margin-left: 11%;
     width:  200px;
     height: 200px;
+   
 }
 
 
@@ -172,4 +179,20 @@ body{
     left: 100px;
     width: 600;
     height: 236;
+    max-width: 100%;
+}
+
+.hours-container {
+    display: block;
+    position:relative;
+    right: 20px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hours-container img {
+    max-width: 160%;
+    
 }
