@@ -196,3 +196,11 @@ body{
     max-width: 160%;
     
 }
+
+.copyright {
+    padding: 10px;
+    font-size: 2vw;
+    color: white;
+    background-color: orange;
+    text-align: center;
+}
