@@ -303,25 +303,8 @@ body{
 }
 
 
-.filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
-    line-height: 100px;
-    text-align: center;
-    margin: 2px;
-    display: none;
-  }
   
-  .show {
-    display: block;
-  }
-  
-  .yuhcontainer {
-    margin-top: 20px;
-    overflow: hidden;
-  }
+
   
   /* Style the buttons */
   .btn {
@@ -334,9 +317,10 @@ body{
   
   .btn:hover {
     background-color: #ddd;
+    color:white;
   }
   
   .btn.active {
-    background-color: #666;
+    background-color: rgb(170, 32, 32);
     color: white;
   }
