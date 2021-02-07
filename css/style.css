@@ -240,7 +240,8 @@ body{
     display:inline-block;
     color:#fff;
     text-transform: capitalize;
-    letter-spacing: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
 }
 
 #menu-filters ul li a {
