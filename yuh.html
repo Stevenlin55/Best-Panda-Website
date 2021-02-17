@@ -13,30 +13,59 @@
 </head>
 
 <body>
-
-  <div>
-
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-      <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-    </ul>
+<!--sort links-->
+<div id="tabs">
+  <a href="#" class="sort" id="showAll" >Show All</a>
+  <a href="#" class="sort" data-filter=".sortA" >Sort A</a>
+  <a href="#" class="sort" data-filter=".sortB" >Sort B</a>
+  <a href="#" class="sort" data-filter=".sortC" >Sort C</a>
+  <a href="#" class="sort" data-filter=".StateA">State A</a>
   
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="home">...</div>
-      <div role="tabpanel" class="tab-pane" id="profile">...</div>
-      <div role="tabpanel" class="tab-pane" id="messages">...</div>
-      <div role="tabpanel" class="tab-pane" id="settings">...</div>
-    </div>
   
-  </div>
-          
-        </div>
-      </div>
-    </div>
+  <!--A-->
+  <div data-cat=".sortA" class="post"><h2>Sort this A A A</h2><p>This is all about sort A</p></div>
+  <!--B-->
+  <div data-cat=".sortB" class="post"><h2>Sort this B</h2><p>This is all about sort B</p></div>
+  <!--C-->
+  <div data-cat=".sortC" class="post"><h2>Sort this C</h2><p>This is all about sort C</p></div>
+  <!--A-->
+  <div data-cat=".sortA" class="post"><h2>Sort this A A A</h2><p>This is all about sort A</p></div>
+  <!--Hopewell-->
+  <div data-cat=".StateA" class="post"><h2>State A Listings</h2><p>This is all about sorting State A listings</p></div>
+      
+  </div>    
+
+  <script >// Variable
+    var posts = $('.post');
+    posts.hide();
+    
+    
+    // Click function
+    $( ".sort" ).click(function() { 
+        // Get data of category
+        var customType = $( this ).data('filter'); // category
+        console.log(customType);
+        console.log(posts.length); // Length of articles
+        
+        posts
+            .hide()
+            .filter(function () {
+                return $(this).data('cat') === customType;
+            })
+            .show(50);
+    });
+    
+    // All
+    $( "#showAll" ).click(function() {
+      $( ".post" ).show(50);
+    }).addClass("highlight").click();
+    
+    
+    // color toggle
+    $( ".sort" ).click(function() {
+      $( this ).toggleClass( "highlight" ).siblings().removeClass("highlight");
+    });
+    </script>
   </section>
 
 
