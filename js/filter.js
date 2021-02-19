@@ -4,13 +4,26 @@ $(document).ready(function(){
         $(".filter").removeClass("active");
         $(this).addClass("active");
         $(".menu-restaurant").hide();
-        if(attr == "breakfast"){
+        if(attr == "appetizer"){
             $("."+ attr).show();
         }
-        else if(attr == "lunch"){
+        else if(attr == "soup"){
             $("."+ attr).show();
         }
-        else if(attr == "dinner"){
+        else if(attr == "entree"){
+            $("."+ attr).show();
+        }
+        else if(attr == "fried-rice"){
+            $("."+ attr).show();
+        }
+        else if(attr == "noodles"){
+            $("."+ attr).show();
+        }
+        else if(attr == "specials"){
+            $("."+ attr).show();
+        }
+      
+        else if(attr == "side"){
             $("."+ attr).show();
         }
         else {
