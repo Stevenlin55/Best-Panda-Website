@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $(".filter").click(function(){
+    $(".filter").click(function(e){
+       
         var attr = $(this).attr("data-filter");
         $(".filter").removeClass("active");
         $(this).addClass("active");
@@ -30,6 +31,7 @@ $(document).ready(function(){
             $(".menu-restaurant").show();
         }
 
+        return false;
        
     })
 });
