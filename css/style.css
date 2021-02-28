@@ -308,5 +308,51 @@ body{
 
   
 
+#search-container  {
+    width:30%;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    
+
+}
+
+.search-box{
+    width:50%;
+    position:relative;
+    
+    display:flex;
+}
+
+
+.search {
+    width:100%;
+    border: 3px solid #FFB03b;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    outline: none;
+    color: #9dbfaf;
+
+}
+
+
+
+.saerch:focus{
+    color: #000;
+    box-shadow: 0 0 5px #FFB03b;
+}
+
+
+.search-btn {
+  
+    border:1px solid #FFB03b;
+    text-align: center;
+    color: #FFB03b;
+    border-radius: 0 5px 5px 0;
+    cursor:pointer;
+    font-size: 15px;
+}
 
   
