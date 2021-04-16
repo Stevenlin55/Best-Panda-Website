@@ -131,10 +131,13 @@ body{
     color: rgb(209, 12, 12);
 }
 
+.current-status h2 {
+    padding-top: 5%;
+    font-size: 30px;
+}
 .current-status p {
-    padding-top: 1%;
+    padding-top: 5%;
     font-size: 20;
-   
 }
 
 .phone-img {
@@ -183,9 +186,9 @@ body{
     position: relative;
     top: 30px;
     left: 100px;
-    width: 600;
-    height: 236;
-    max-width: 100%;
+    width:  200px;
+    height: 200px;
+   
 }
 
 .hours-container {
