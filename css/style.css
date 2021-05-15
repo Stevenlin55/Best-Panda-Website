@@ -271,32 +271,44 @@ body{
 
 .menu-restaurant{
     width: 50%;
-    float: left;
+    float: right;
     padding: 15px;
     position: relative;
+    min-width: 450px; /* For mobile devices */
+    max-width: 500px; /* Custom max width for readbility */
 }
 
+.menu-restaurant span.clearfix{
+    position: relative;
+    display: flex;
+   
+}
 .menu-restaurant .menu-title {
     float: left;
     font-family: Montserrat,arial;
-    text-transform: uppercase;
     letter-spacing: 1px;
     color: #ff5821;
     pointer-events: none;
    cursor: default;
+  
 }
 
 .menu-restaurant .menu-line {
-    position:absolute;
-    bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0.3);
-    margin-left: .6rem;
-    margin-right: .6rem;
+   
+  border-bottom: 2px dotted #B5ABAB; /* Our dotted line, we can use border-image instead */
+    content: "";
+    flex-grow: 1;
+    height: 1em;
+    order: 2;
+    margin: 0 3px;
+
+
 }
 
 .menu-restaurant .menu-price {
+    order: 3;
     font-weight: 600;
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
 }
@@ -308,10 +320,7 @@ body{
     font-size: 1.2rem;
 }
 
-.menu-restaurant span.clearfix{
-    position: relative;
-    display: block;
-}
+
 
 
   
@@ -369,4 +378,10 @@ body{
         right: 31%
     }
    
+    .menu-restaurant{
+        
+        float: left;
+
+      
+    }
 }

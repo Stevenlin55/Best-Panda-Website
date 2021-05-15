@@ -3,7 +3,9 @@
 <head>
     <title>Best Panda Chinese Restaurant Website</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+  <?php include "css/style.css" ?>
+</style>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -75,13 +77,16 @@
 
                             
                         <?php
+                            
+                            
                             if ($resultCheck > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) { ?>
+
 
                                     <div class="menu-restaurant <?php echo $row['category'] ?>">
                                         <span class="clearfix">
                                             <a class="menu-title"><?php echo $row['name'] ?></a>
-                                            <span style="left: 100px;right: 44px;" class="menu-line"></span>
+                                            <span class="menu-line"></span>
                                             <span class="menu-price"><?php echo '$'.$row['price'] ?></span>
                                         </span>
                                         <span class="menu-subtitle"><?php echo $row['description'] ?></span>
