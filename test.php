@@ -81,8 +81,6 @@
                             
                             if ($resultCheck > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) { ?>
-
-
                                     <div class="menu-restaurant <?php echo $row['category'] ?>">
                                         <span class="clearfix">
                                             <a class="menu-title"><?php echo $row['name'] ?></a>
