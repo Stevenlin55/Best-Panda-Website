@@ -37,7 +37,7 @@
     <section id="menu-list" class="section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center marb-35">
+                <div class="col-md-14 text-center marb-35">
                     <h1 class="header-h">Menu</h1>
                     <p class="header-p">Prices are subject to change and some items might not be available</p>
                 </div>
