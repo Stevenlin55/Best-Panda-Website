@@ -8,91 +8,49 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/?family=Satisfy|Bree+Serif|Candal|PT+Sans">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
 <!--sort links-->
-<div id="tabs">
-  <a href="#" class="sort" id="showAll" >Show All</a>
-  <a href="#" class="sort" data-filter=".sortA" >Sort A</a>
-  <a href="#" class="sort" data-filter=".sortB" >Sort B</a>
-  <a href="#" class="sort" data-filter=".sortC" >Sort C</a>
-  <a href="#" class="sort" data-filter=".StateA">State A</a>
-  
-  
-  <!--A-->
-  <div data-cat=".sortA" class="post"><h2>Sort this A A A</h2><p>This is all about sort A</p></div>
-  <!--B-->
-  <div data-cat=".sortB" class="post"><h2>Sort this B</h2><p>This is all about sort B</p></div>
-  <!--C-->
-  <div data-cat=".sortC" class="post"><h2>Sort this C</h2><p>This is all about sort C</p></div>
-  <!--A-->
-  <div data-cat=".sortA" class="post"><h2>Sort this A A A</h2><p>This is all about sort A</p></div>
-  <!--Hopewell-->
-  <div data-cat=".StateA" class="post"><h2>State A Listings</h2><p>This is all about sorting State A listings</p></div>
-      
-  </div>    
+    <h2>Location and Hours</h2>
 
-  <script >// Variable
-    var posts = $('.post');
-    posts.hide();
+    <div class="location-and-hours">
+        <div class="map">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.5859639176183!2d-87.92700218454331!3d42.372662279186024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f9207ca7c66b3%3A0xeabb10d862c9c69a!2sBest%20Panda%20Chinese%20Restaurant!5e0!3m2!1sen!2sus!4v1610812083755!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+        </div>
+        <div class="current-status">
+            <h1><span id="open-sign"></span></h1>
+            <h1><span id="closed-sign"></span></h1>
+            <h2><span id="date"></span></h2>  
+            <p><span id="time"></span></p>
+            <script src="js/script.js"></script>
+         </div> 
+         <div class="hours-container">
+            <img id="hours-img" src="img/hours.png" alt="Hours" style="width: 50px; height: 50px;">
+        </div>
+    </div>
+
     
-    
-    // Click function
-    $( ".sort" ).click(function() { 
-        // Get data of category
-        var customType = $( this ).data('filter'); // category
-        console.log(customType);
-        console.log(posts.length); // Length of articles
-        
-        posts
-            .hide()
-            .filter(function () {
-                return $(this).data('cat') === customType;
-            })
-            .show(50);
-    });
-    
-    // All
-    $( "#showAll" ).click(function() {
-      $( ".post" ).show(50);
-    }).addClass("highlight").click();
-    
-    
-    // color toggle
-    $( ".sort" ).click(function() {
-      $( this ).toggleClass( "highlight" ).siblings().removeClass("highlight");
-    });
-    </script>
-  </section>
+    <div class="phone-container">
+      <img class="phone-img" src="img/phone.png" alt="Phone">
+      <h2>Phone: (847) 662-0066</h2>
+      <h2>Line 2: (847) 662-0108</h2>
+  </div>
 
+  <div class="delivery-container">
+      <h1>Order Online for Delivery/Pickup!</h1>
+      <div class="delivery-images"> 
+          <a href=https://www.grubhub.com/restaurant/best-panda-chinese-restaurant-4949-grand-ave-ste-4a-gurnee/1044083#:~:text=Best%20Panda%20Chinese%20Restaurant%20Delivery,Gurnee%20%7C%20Order%20Online%20With%20Grubhub">
+              <img class="grubhub-img" src="img/grubhub-logo.png" alt="Phone">
+          </a>
+          <a href="https://www.doordash.com/store/best-panda-chinese-restaurant-gurnee-757771">
+              <img class="doordash-img" src="img/doordash.jpg" alt="Phone">
+          </a>
+      </div>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
 
 </body>
 </html>

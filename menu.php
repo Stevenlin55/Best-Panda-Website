@@ -18,7 +18,7 @@
             <div class = "navbar">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li class="currentTab"><a href="menu.html">MENU</a></li>
+                    <li class="currentTab"><a href="menu.php">MENU</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                   </ul>
             </div>
