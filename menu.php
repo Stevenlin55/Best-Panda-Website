@@ -24,15 +24,7 @@
             </div>
         </div>
     </div> 
-    <div class="container-2">
-        <div class="box-2"> 
-            <h2>4949 Grand Ave., Suite 4A</h2>
-            <h3>Gurnee, IL 60031</h3>
-            <h4>(Located in Grand Mall Plaza)</h4>
-        </div>
-    </div>
-
-  
+   
 
     <section id="menu-list" class="section-padding">
         <div class="container">
