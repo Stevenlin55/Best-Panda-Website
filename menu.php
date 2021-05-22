@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-14 text-center marb-35">
                     <h1 class="header-h">Menu</h1>
-                    <p class="header-p">Prices are subject to change and some items might not be available</p>
+                    <p class="header-p">Pricing and availability are subject to change</p>
                 </div>
 
 
@@ -60,7 +60,7 @@
 
                     </ul>
                        
-                        
+                  
                     <div class="menu-wrapper">
                       
                         <?php
@@ -86,11 +86,8 @@
                                     </div>
                             <?php }  ?>
                             <?php }  ?>
-                        
-                      
-                </div>
-                
-                   
+                            
+                    </div>
             </div>
         </div>
     </section>

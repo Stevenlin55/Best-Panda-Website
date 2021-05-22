@@ -261,6 +261,12 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     font-size:16px;
 }
 
+
+#menu-filters{
+    transform: translateX(2%)
+}
+
+
 #menu-filters ul li{
     display:inline-block;
     color:#fff;
@@ -270,7 +276,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 }
 
 #menu-filters ul li a {
-    padding: 10px 20px;
+    padding: 8px 15px;
     font-size: 14px;
     color: #565656;
     border-radius: 0px;
@@ -287,25 +293,27 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 }
 
 #menu-filters ul li a:hover{
-    background: #FFB03B;
     color: rgb(0, 0, 0);
-    border: 1px solid #FFB03b;
+    border: 2px solid #FFB03b;
 }
+
 
 .menu-restaurant{
     width: 50%;
-    float: right;
-    padding: 25px;
-    position: relative;
-    min-width: 450px; /* For mobile devices */
-    max-width: 500px; /* Custom max width for readbility */
+    float: left;
+    padding: 30px;
+    min-width: 330px; /* For mobile devices */ 
+    height: 80px;
 }
 
+
+
 .menu-restaurant span.clearfix{
-    position: relative;
+    width: 110%;
     display: flex;
-   
+    white-space: nowrap;
 }
+
 .menu-restaurant .menu-title {
     float: left;
     font-family: Montserrat,arial;
@@ -313,19 +321,16 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     color: #ff5821;
     pointer-events: none;
    cursor: default;
-    
 }
 
 .menu-restaurant .menu-line {
    
-  border-bottom: 2px dotted #B5ABAB; /* Our dotted line, we can use border-image instead */
+  border-bottom: 2px dotted #B5ABAB; /* dotted line */
     content: "";
     flex-grow: 1;
     height: 1em;
     order: 2;
     margin: 0 3px;
-
-
 }
 
 .menu-restaurant .menu-price {
@@ -358,6 +363,10 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     }
     table {
         height: 300px;
+    }
+    .menu-restaurant{
+        margin-left: 20%;
+        padding: 20px;
     }
 }
 
@@ -438,4 +447,8 @@ tr:nth-child(even) {background-color: #f2f2f2;}
         width: 280px;
     }
    
+    .menu-restaurant{
+        margin-left: 10%;
+        padding: 15px;
+    }
 }
