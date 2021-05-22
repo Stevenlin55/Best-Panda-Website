@@ -42,21 +42,24 @@
                         <li><a class="filter " data-filter="menu-restaurant">Show All</a></li>
                         <li><a class="filter" data-filter="appetizer">Appetizer</a></li>
                         <li><a class="filter" data-filter="soup">Soup</a></li>
-                        <li><a class="filter" data-filter="entree">Entrée</a></li>
+                        <li><a class="filter" data-filter="chop-suey">Chop Suey</a></li>
+                        <li><a class="filter" data-filter="egg-foo-young">Egg Foo Young</a></li>
+                        <li><a class="filter" data-filter="poultry">Poultry</a></li>
+                        <li><a class="filter" data-filter="roast-pork">Roast Pork</a></li>
+                        <li><a class="filter" data-filter="shrimp">Shrimp</a></li>
+                        <li><a class="filter" data-filter="beef">Beef</a></li>
+                        <li><a class="filter" data-filter="vegetable">Vegetable</a></li>
                         <li><a class="filter" data-filter="fried-rice">Fried Rice</a></li>
-                        <li><a class="filter" data-filter="noodles">Noodles</a></li>
-                        <li><a class="filter" data-filter="specials">Specials</a></li>
+                        <li><a class="filter" data-filter="lo-mein">Lo Mein</a></li>
+                        <li><a class="filter" data-filter="chow-mein-fun">Chow Mein Fun</a></li>
+                        <li><a class="filter" data-filter="daily">Daily Special</a></li>
+                        <li><a class="filter" data-filter="house">House Specialties</a></li>
+                        <li><a class="filter" data-filter="lunch">Lunch Specials</a></li>
                         <li><a class="filter" data-filter="side">Side Orders</a></li>
+                        
 
                     </ul>
-                        <div class="search-container"></a> 
-                            <div class="search-box">
-                                <input type="text" class="search"  placeholder="Search for food"/>
-                                <button type="submit" class="search-btn">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
+                       
                         
                     <div class="menu-wrapper">
                       
