@@ -236,6 +236,20 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     text-align: center;
 }
 
+#pdf-link {
+    background-color: #247a37;
+    color: white;
+    padding: 5px 10px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+}
+
+  
+  #pdf-link:hover {
+    background-color: #1d5f2b;
+  }
+
 
 .class-filter {
     text-align: center;

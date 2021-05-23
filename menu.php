@@ -32,6 +32,7 @@
                 <div class="col-md-14 text-center marb-35">
                     <h1 class="header-h">Menu</h1>
                     <p class="header-p">Pricing and availability are subject to change</p>
+                    <a id="pdf-link" href="https://drive.google.com/file/d/1q_COgR5fWQUR1o4g_IYTIbiobZBKortA/view?usp=sharing">Click for PDF</a>
                 </div>
 
 
