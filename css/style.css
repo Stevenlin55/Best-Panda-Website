@@ -293,7 +293,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
 }
 
 #menu-filters ul li a {
-    padding: 8px 15px;
+    padding: 7px 10px;
     font-size: 14px;
     color: #565656;
     border-radius: 0px;
@@ -398,42 +398,42 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     #menu-filters ul{
         display: none;
     }
+        
+    .sidebar-filter{
     
-.sidebar-filter{
-  
-    line-height: 24px;
-    padding: 5 15px;
-    text-decoration: none;
-    display: block;
-   
-}
-
-.sidebar-filter ul{
-    position: absolute;
-    left: 1;
-    list-style: none;
-    margin-right: 10px;
-    padding: 0;
-   border: 1px solid green;
-}
-.sidebar-filter ul li a{
-    display: block;
-    padding: 5px 1px;
-    font-size: 14px;
-    color: #565656;
-    border-radius: 0px;
-    border-bottom: 1px solid #BBBBBB;
-    text-decoration: none;
-    cursor: pointer;
-}
-.sidebar-filter ul li a:last-child{
+        line-height: 24px;
+        padding: 5 15px;
+        text-decoration: none;
+        display: block;
     
-}
+    }
 
-.sidebar-filter ul li a:hover{
-    color: rgb(0, 0, 0);
-    background-color: #e6e3e3;
-}
+    .sidebar-filter ul{
+        position: absolute;
+        left: 1;
+        list-style: none;
+        margin-right: 10px;
+        padding: 0;
+    border: 1px solid green;
+    }
+    .sidebar-filter ul li a{
+        display: block;
+        padding: 5px 1px;
+        font-size: 14px;
+        color: #565656;
+        border-radius: 0px;
+        border-bottom: 1px solid #BBBBBB;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .sidebar-filter ul li a:last-child{
+        
+    }
+
+    .sidebar-filter ul li a:hover{
+        color: rgb(0, 0, 0);
+        background-color: #e6e3e3;
+    }
 }
 
 @media  (max-width: 655px) {
