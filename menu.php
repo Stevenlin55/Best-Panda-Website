@@ -28,7 +28,7 @@
 
     <section id="menu-list" class="section-padding">
         <div class="container">
-            <div class="row">
+          
                 <div class="col-md-14 text-center marb-35">
                     <h1 class="header-h">Menu</h1>
                     <p class="header-p">Pricing and availability are subject to change</p>
@@ -36,7 +36,30 @@
                 </div>
 
 
-             
+              
+                <div class="sidebar-filter">
+              
+                        <ul>
+                            <li><a class="filter " data-filter="menu-restaurant">Show All</a></li>
+                            <li><a class="filter" data-filter="appetizer">Appetizer</a></li>
+                            <li><a class="filter" data-filter="soup">Soup</a></li>
+                            <li><a class="filter" data-filter="chop-suey">Chop Suey</a></li>
+                            <li><a class="filter" data-filter="egg-foo-young">Egg Foo Young</a></li>
+                            <li><a class="filter" data-filter="poultry">Poultry</a></li>
+                            <li><a class="filter" data-filter="roast-pork">Roast Pork</a></li>
+                            <li><a class="filter" data-filter="shrimp">Shrimp</a></li>
+                            <li><a class="filter" data-filter="beef">Beef</a></li>
+                            <li><a class="filter" data-filter="vegetable">Vegetable</a></li>
+                            <li><a class="filter" data-filter="fried-rice">Fried Rice</a></li>
+                            <li><a class="filter" data-filter="lo-mein">Lo Mein</a></li>
+                            <li><a class="filter" data-filter="chow-mein-fun">Chow Mein Fun</a></li>
+                            <li><a class="filter" data-filter="daily">Daily Special</a></li>
+                            <li><a class="filter" data-filter="house">House Specialties</a></li>
+                            <li><a class="filter" data-filter="lunch">Lunch Specials</a></li>
+                            <li><a class="filter" data-filter="side">Side Orders</a></li>
+                        </ul>
+                </div>
+               
 
                 <div class="col-md-11 text-center" id="menu-filters">
                     <ul>
@@ -57,8 +80,6 @@
                         <li><a class="filter" data-filter="house">House Specialties</a></li>
                         <li><a class="filter" data-filter="lunch">Lunch Specials</a></li>
                         <li><a class="filter" data-filter="side">Side Orders</a></li>
-                        
-
                     </ul>
                        
                   
@@ -89,7 +110,7 @@
                             <?php }  ?>
                             
                     </div>
-            </div>
+           
         </div>
     </section>
 
