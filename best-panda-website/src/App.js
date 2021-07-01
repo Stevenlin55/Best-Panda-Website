@@ -7,7 +7,7 @@ import Header from './components/Header.js';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import FAQ from './components/FAQ';
-
+import Footer from './components/Footer'
 export default class App extends Component {
   render() {
     return (
@@ -20,6 +20,7 @@ export default class App extends Component {
               <Route path="/menu" exact component={Menu}  />
               <Route path="/faq" exact component={FAQ} />  
             </div>
+            <Footer />
           </BrowserRouter>
      
       </div>

@@ -2,15 +2,32 @@ import React, { Component } from "react";
 
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-
+import "bootstrap/js/src/collapse.js";
+import logo from "./logo.png";
+import "../styles.css";
 export default class Header extends Component {
+  state = {
+    number: 0,
+  };
+  click() {
+    let currentNum = this.state.number;
+    currentNum++;
+    this.setState({ number: currentNum });
+    console.log(this.state.number);
+  }
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-success">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              Best Panda
+            <Link className="navbar-brand logo-and-name" to="/">
+              <img
+                src={logo}
+                alt="Logo"
+                width="50"
+                height="52"
+                className="d-inline-block align-text-top"
+              />
             </Link>
             <button
               className="navbar-toggler"
