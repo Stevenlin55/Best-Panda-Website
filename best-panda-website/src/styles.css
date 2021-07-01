@@ -1,0 +1,26 @@
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.business-hours {
+    padding: 25px 30px;
+}
+
+.business-hours li {
+    color: #888;
+    line-height: 50px;
+    border-bottom: 1px solid #333;
+}
+
+.business-hours li:last-child {
+    border-bottom: none;
+}
+
+.business-hours .opening-hours li.today {
+    color: #ffac0c;
+}
+
+.pull-right {
+    float: right;
+}
+
