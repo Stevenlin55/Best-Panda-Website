@@ -24,3 +24,6 @@
     float: right;
 }
 
+.card-columns {
+    column-count: 3;
+}

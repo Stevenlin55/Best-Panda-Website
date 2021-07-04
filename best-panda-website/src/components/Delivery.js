@@ -39,18 +39,18 @@ export default class Delivery extends Component {
               </div>
 
               <div className="col">
-                <div className="card rounded-3 shadow-sm border-success">
+                <div className="card rounded-3 shadow-sm border-success d-flex justify-content-center align-items-left">
                   <div className="card-header py-3 bg-success">
                     <h4 className="my-0 fw-normal text-white">Phone</h4>
                   </div>
                   <div className="card-body">
-                    <h4 className="card-title text-left">
+                    <h4 className="card-title text-left d-block">
                       Line 1: (847) 662-0066
                     </h4>
-                    <h5 className="card-title text-left">
+                    <h5 className="card-title text-left d-block">
                       Line 2: (847) 662-0108
                     </h5>
-                    <ul className="list-unstyled mt-4 mb-4">
+                    <ul className="list-unstyled mt-4 mb-4 d-block">
                       <li>Call Line 2 if Line 1 does not work</li>
                     </ul>
                   </div>
