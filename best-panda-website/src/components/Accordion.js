@@ -1,68 +1,67 @@
 import React, { Component } from "react";
 import "../styles.css";
 export default class Accordion extends Component {
-  constructor(props) {
-    super(props);
-    
-  }
-
-  createCategories() {
-    let categories = [];
-    for (let category of this.props.categories) {
-        categories.push(
-
-        
-      <div className="accordion-item">
-        <h2
-          className="accordion-header"
-          id={"panelsStayOpen-headings" + category.name}
-        >
-          <button
-            className="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target={"#panelsStayOpen-collapse" + category.name}
-            aria-expanded="false"
-            aria-controls={"panelsStayOpen-collapse" + category.name}
-          >
-            {category}
-          </button>
-        </h2>
-        <div
-          id={"panelsStayOpen-collapse" + category.name}
-          className="accordion-collapse collapse"
-          aria-labelledby={"panelsStayOpen-heading" + category.name}
-        >
-          <div className="accordion-body">
-            <div className="row">{this.createItemsFromCategory()}</div>
+  
+  renderItems(category) {
+    if (category.items) {
+      return (category.items.map((item, index) => (
+        <div class="col-sm-6">
+        <div key={index} className="card">
+          <div className="card-body">
+            <h5 className="card-title fw-bold">
+              {item.name}
+              <span className="pull-right fw-bold">
+                {item.price}
+              </span>
+            </h5>
+            <p className="card-text">{item.details}</p>
           </div>
         </div>
-      </div>);
+        </div>
+      )))
     }
-    console.log(categories)
-  
   }
-
-  createItemsFromCategory() {
-    <div className="col-sm-6">
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title fw-bold">
-            Egg Roll<span className="pull-right fw-bold">123</span>
-          </h5>
-          <p className="card-text">hi</p>
-        </div>
-      </div>
-    </div>;
-  }
-
   render() {
-    return (
-      <div>
-        <div className="accordion" id="accordionPanelsStayOpenExample">
-          {this.createCategories()}
+    console.log(this.props.categories)
+    if (this.props.categories) {
+      return (
+        <div>
+          <div className="accordion" id="accordionPanelsStayOpenExample">
+            {this.props.categories.map((category, index) => (
+              <div key={index} className="accordion-item">
+                <h2
+                  className="accordion-header"
+                  id={"panelsStayOpen-headings" + category.name.toString().split(" ").join("")}
+                >
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target={"#panelsStayOpen-collapse" + category.name.toString().split(" ").join("")}
+                    aria-expanded="false"
+                    aria-controls={"panelsStayOpen-collapse" + category.name.toString().split(" ").join("")}
+                  >
+                    {category.name}
+                  </button>
+                </h2>
+                <div
+                  id={"panelsStayOpen-collapse" + category.name.toString().split(" ").join("")}
+                  className="accordion-collapse collapse"
+                  aria-labelledby={"panelsStayOpen-heading" + category.name.toString().split(" ").join("")}
+                >
+                  <div className="accordion-body">
+                    <div className="row">
+                      {this.renderItems(category)}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return <div>Loading</div>;
+    }
   }
 }
