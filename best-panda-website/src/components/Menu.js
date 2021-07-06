@@ -11,6 +11,18 @@ export default class Menu extends Component {
         { name: "Soup" },
         { name: "Chop Suey" },
         { name: "Egg Foo Young" },
+        { name: "Poultry" },
+        { name: "Roast Pork" },
+        { name: "Shrimp" },
+        { name: "Beef" },
+        { name: "Vegetable" },
+        { name: "Fried Rice" },
+        { name: "Lo Mein" },
+        { name: "Chow Mein Fun" },
+        { name: "House Specialties" },
+        { name: "Daily Special" },
+        { name: "Lunch Menu" },
+        { name: "Side Orders" },
       ],
       loading: true //when page loads, it's going to show loading spinner
     };
