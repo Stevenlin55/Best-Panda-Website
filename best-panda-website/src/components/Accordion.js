@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import "../styles.css";
+import chili from "./chili.png";
 export default class Accordion extends Component {
   renderItems(category) {
     if (category.items) {
       //if we have all the items of the categories, show the cards for each item
       return category.items.map((item, index) => (
-        <div class="col-sm-6">
+        <div key={index} className="col-sm-6">
           <div key={index} className="card">
             <div className="card-body">
               <h5 className="card-title fw-bold">
                 {item.name}
+                {this.addChiliIfSpicy(item)}
                 <span className="pull-right fw-bold">{item.price}</span>
               </h5>
               <p className="card-text">{item.details}</p>
@@ -25,6 +27,44 @@ export default class Accordion extends Component {
       </div>
     );
   }
+  addChiliIfSpicy(item) {
+    if (item.details.includes("Spicy")) {
+      return (
+        <img
+          src={chili}
+          alt="Chili"
+          width="40"
+          height="42"
+          className="d-incline-block"
+          style={{ marginLeft: "-10px", marginTop: "-5px" }}
+        />
+      );
+    }
+  }
+  addSubHeadingToCategories(category) {
+    if (category === "Daily Special") {
+      return (
+        <h5 className="text-left mb-4">
+          All served with plain fried rice or white rice
+        </h5>
+      );
+    }
+    if (category === "Lunch Menu") {
+      return (
+        <div>
+          <h5 className="text-left mb-2">
+            All served with Egg Roll and Fried Rice
+          </h5>
+
+          <h6 className="text-left mb-2">
+            Served from Tuesday — Saturday 11:30A.M. — 3:00P.M
+          </h6>
+          <h6 className="text-left mb-4">No substitutions</h6>
+        </div>
+      );
+    }
+  }
+
   render() {
     if (this.props.categories && this.props.categories[0].items) {
       return (
@@ -72,6 +112,7 @@ export default class Accordion extends Component {
                     }
                   >
                     <div className="accordion-body">
+                      {this.addSubHeadingToCategories(category.name)}
                       <div className="row">{this.renderItems(category)}</div>
                     </div>
                   </div>

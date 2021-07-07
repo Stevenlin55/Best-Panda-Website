@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../styles.css";
 import Accordion from "./Accordion.js";
 import db from "./firebase.js";
+import chili from "./chili.png";
 export default class Menu extends Component {
   constructor(props) {
     super(props);
@@ -24,25 +25,28 @@ export default class Menu extends Component {
         { name: "Lunch Menu" },
         { name: "Side Orders" },
       ],
-      loading: true //when page loads, it's going to show loading spinner
+      loading: true, //when page loads, it's going to show loading spinner
     };
   }
   componentDidMount() {
-    this.fetchDataFromFirebase();  //when page loads, fetch from firebase
+    this.fetchDataFromFirebase(); //when page loads, fetch from firebase
   }
 
   async fetchDataFromFirebase() {
     try {
-      for (let i = 0; i < this.state.categories.length; i++) { 
+      for (let i = 0; i < this.state.categories.length; i++) {
         //loop through all the categories
-        const snapshot = await db.collection(this.state.categories[i].name).orderBy("number").get(); //get snapshot of all categories and order the items by their number
+        const snapshot = await db
+          .collection(this.state.categories[i].name)
+          .orderBy("number")
+          .get(); //get snapshot of all categories and order the items by their number
         this.state.categories[i].items = snapshot.docs.map((doc) => ({
           //update the state's categories' items from snapshot
           name: doc.id,
           price: doc.data().price,
           details: doc.data().description,
         }));
-        this.setState({loading: false}); //after fetching data, make sure to make screen not loading anymore
+        this.setState({ loading: false }); //after fetching data, make sure to make screen not loading anymore
       }
     } catch (err) {
       console.log(err);
@@ -50,31 +54,49 @@ export default class Menu extends Component {
   }
 
   render() {
-    if (this.state.loading) { //if it's loading, show a spinner
+    if (this.state.loading) {
+      //if it's loading, show a spinner
       return (
-        <div className="spinner-border text-success d-block m-auto" role="status">
+        <div
+          className="spinner-border text-success d-block m-auto"
+          role="status"
+        >
           <span className="sr-only"></span>
         </div>
       );
     }
-   
-       return ( //show the menu page if screen loads
-        <div>
-          <div className="container py-5">
-            <div className="row">
-              <div className="col-lg-10 mx-auto col-12 text-center mb-3">
-                <h1 className="mt-0 text-dark">Our Menu</h1>
-                <p className="lead" style={{ color: "gray" }}>
-                  Pricing and availability are subject to change
-                </p>
-              </div>
 
-              <div className="accordion" id="accordionPanelsStayOpenExample">
-                <Accordion categories={this.state.categories} /> 
+    return (
+      //show the menu page if screen loads
+      <div>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-lg-10 mx-auto col-12 text-center mb-3">
+              <h1 className="mt-0 text-dark">Our Menu</h1>
+              <p className="lead" style={{ color: "gray" }}>
+                Pricing and availability are subject to change
+              </p>
+              <div className="d-flex justify-content-center align-items-center">
+                <div style={{flex: 1}}></div>
+                <img
+                  src={chili}
+                  alt="Chili"
+                  width="50"
+                  height="52"
+                  className="d-incline-block float-left"
+                  style={{marginLeft:'-20px'}}
+                />{" "}
+                <div style={{marginLeft:'-15px'}}>indicates hot and spicy</div>
+                <div style={{flex: 1}}></div>
               </div>
+            </div>
+
+            <div className="accordion" id="accordionPanelsStayOpenExample">
+              <Accordion categories={this.state.categories} />
             </div>
           </div>
         </div>
-      );
+      </div>
+    );
   }
 }
