@@ -13,7 +13,7 @@ export default class App extends Component {
       <div>
        <BrowserRouter>
             <Header />
-            <div className="container mt-3">
+            <div className="container">
               <Route path="/" exact component={Home} />
               <Route path="/menu" exact component={Menu}  />
               <Route path="/faq" exact component={FAQ} />  

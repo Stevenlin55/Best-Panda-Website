@@ -68,8 +68,8 @@ export default class Menu extends Component {
 
     return (
       //show the menu page if screen loads
-      <div>
-        <div className="container py-5">
+      <div className="pt-5 mt-5">
+        <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto col-12 text-center mb-3">
               <h1 className="mt-0 text-dark">Our Menu</h1>

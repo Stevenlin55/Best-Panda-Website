@@ -18,7 +18,7 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-success static-top">
+        <nav className="navbar navbar-expand-lg navbar-light bg-success fixed-top">
           <div className="container-fluid">
             <Link className="navbar-brand d-flex justify-content-between align-items-center" to="/">
               <img
@@ -28,7 +28,7 @@ export default class Header extends Component {
                 height="52"
                 className="d-inline-block"
               />
-              <div className="ml-5">Best Panda</div>
+              <div className="ml-5 name">Best Panda</div>
             </Link>
             <button
               className="navbar-toggler"
@@ -56,11 +56,11 @@ export default class Header extends Component {
                     Menu
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/faq">
                     FAQ
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
