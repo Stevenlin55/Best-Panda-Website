@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default class Delivery extends Component {
   render() {
     return (
-      <div className="mt-5"> 
+      <div style={{marginTop: '6rem'}}> 
         <section id="contact" className="contact">
           <div className="container p-5 mb-4 bg-light rounded-3 text-center">
             <h1 className="display-5 fw-bold">Order for Pickup/Delivery</h1>
