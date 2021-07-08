@@ -1,15 +1,44 @@
+.navbar-brand {
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-text-stroke: 1.5px white;
+    margin-left: 10px;
+}
+.navbar-brand img{
+    margin-right: 5px;
+}
+.navbar-light .navbar-brand {
+    color: red;
+}
+.navbar-light:hover .navbar-brand:hover {
+    color: red;
+}
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
 
+.navbar-nav {
+    font-size: 1.3rem;
+}
+
+
+/*style hours chart */
 .business-hours {
-    padding: 25px 30px;
+    padding: 25px;
+}
+
+.business-hours ul {
+    margin-left: 0
 }
 
 .business-hours li {
     color: #888;
     line-height: 50px;
     border-bottom: 1px solid #333;
+    font-size: 0.75rem
 }
 
 .business-hours li:last-child {
@@ -53,3 +82,42 @@
     font-weight: bold;
 }
 
+.contact .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+  .contact .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #6c665c;
+  }
+  
+  .contact .box h4 {
+    font-size: 1.18rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+  }
+  
+  .contact .box h5 {
+    color: #746f6f;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact .box:hover {
+    background: #198754;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .contact .box:hover span, .contact .box:hover h4, .contact .box:hover h5 {
+    color: #fff;
+  }
+  

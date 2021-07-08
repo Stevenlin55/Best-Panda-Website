@@ -4,7 +4,7 @@ export default class Location extends Component {
   render() {
     return (
       <div className="col-md-6">
-        <div className="h-100 p-5 text-white bg-success rounded-3">
+        <div className="h-100 p-5 text-white bg-dark rounded-3">
           <h2>Location</h2>
           <p>4949 Grand Ave., Suite 4A Gurnee, IL</p>
 
