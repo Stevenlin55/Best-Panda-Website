@@ -5,11 +5,11 @@
 .navbar-brand {
     text-decoration: none;
     font-size: 2.5rem;
-  font-family:Impact,  'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
     text-transform: uppercase;
     text-align: center;
-    -webkit-text-stroke: 1px white;
     margin-left: 10px;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 .navbar-brand img {
