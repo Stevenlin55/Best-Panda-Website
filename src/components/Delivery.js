@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default class Delivery extends Component {
   render() {
     return (
-      <div className="mt-5"> 
+      <div style={{marginTop: '6rem'}}> 
         <section id="contact" className="contact">
           <div className="container p-5 mb-4 bg-light rounded-3 text-center">
             <h1 className="display-5 fw-bold">Order for Pickup/Delivery</h1>
@@ -28,7 +28,23 @@ export default class Delivery extends Component {
            
 
             <div className="row">
-              <div className="col-lg-4">
+
+              
+            <div className="col-lg-4">
+                <div className="box text-center">
+                  <span>Phone</span>
+                  <h4 className="card-title text-center">
+                    Line 1: (847) 662-0066
+                  </h4>
+                  <h4 className="card-title  pt-3">Line 2: (847) 662-0108</h4>
+                  <h5 className="card-title pt-4">
+                    Call Line 2 if Line 1 does not work
+                  </h5>
+                </div>
+              </div>
+
+
+              <div className="col-lg-4 mt-4 mt-lg-0">
                 <div className="box text-center">
                   <span>GrubHub</span>
                   <img
@@ -47,8 +63,7 @@ export default class Delivery extends Component {
                   >
                     <button
                       type="button"
-                      className="w-100 btn btn-lg btn-dark mt-3"
-                      style={{ fontSize: "1.2rem" }}
+                      className="w-100 btn btn-lg btn-dark mt-3 delivery-btn"
                     >
                       Click for GrubHub
                     </button>
@@ -56,18 +71,6 @@ export default class Delivery extends Component {
                 </div>
               </div>
 
-              <div className="col-lg-4 mt-4 mt-lg-0">
-                <div className="box text-center">
-                  <span>Phone</span>
-                  <h4 className="card-title text-center">
-                    Line 1: (847) 662-0066
-                  </h4>
-                  <h4 className="card-title  pt-3">Line 2: (847) 662-0108</h4>
-                  <h5 className="card-title pt-4">
-                    Call Line 2 if Line 1 does not work
-                  </h5>
-                </div>
-              </div>
 
               <div className="col-lg-4 mt-4 mt-lg-0">
                 <div className="box text-center">
@@ -88,8 +91,8 @@ export default class Delivery extends Component {
                   >
                     <button
                       type="button"
-                      className="w-100 btn btn-lg btn-dark mt-3"
-                      style={{ fontSize: "1.2rem" }}
+                      className="w-100 btn btn-lg btn-dark mt-3 delivery-btn"
+              
                     >
                       Click for DoorDash
                     </button>
