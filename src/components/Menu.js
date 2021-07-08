@@ -36,16 +36,14 @@ export default class Menu extends Component {
     try {
       for (let i = 0; i < this.state.categories.length; i++) {
         //loop through all the categories
-        const snapshot = await db
-          .collection(this.state.categories[i].name)
-          .orderBy("number")
-          .get(); //get snapshot of all categories and order the items by their number
+        const snapshot = await db.collection(this.state.categories[i].name).orderBy("number").get(); //get snapshot of all categories and order the items by their number
         this.state.categories[i].items = snapshot.docs.map((doc) => ({
           //update the state's categories' items from snapshot
           name: doc.id,
           price: doc.data().price,
           details: doc.data().description,
         }));
+        console.log(this.state.categories[i].items)
         this.setState({ loading: false }); //after fetching data, make sure to make screen not loading anymore
       }
     } catch (err) {
@@ -68,7 +66,7 @@ export default class Menu extends Component {
 
     return (
       //show the menu page if screen loads
-      <div className="pt-5 mt-5">
+      <div>
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto col-12 text-center mb-3">

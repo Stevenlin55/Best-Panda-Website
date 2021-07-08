@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer'
+import './styles.css'
 export default class App extends Component {
   render() {
     return (
@@ -13,7 +14,7 @@ export default class App extends Component {
       <div>
        <BrowserRouter>
             <Header />
-            <div className="container">
+            <div className="container body">
               <Route path="/" exact component={Home} />
               <Route path="/menu" exact component={Menu}  />
               <Route path="/faq" exact component={FAQ} />  

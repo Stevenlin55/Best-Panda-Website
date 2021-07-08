@@ -57,7 +57,10 @@ export default class Accordion extends Component {
           </h5>
 
           <h6 className="text-left mb-2">
-            Served from Tuesday — Saturday 11:30A.M. — 3:00P.M
+            Served from Tuesday — Saturday
+          </h6>
+          <h6 className="text-left mb-2">
+            11:30A.M. — 3:00P.M
           </h6>
           <h6 className="text-left mb-4">No substitutions</h6>
         </div>
