@@ -18,16 +18,17 @@ export default class Header extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-success">
+        <nav className="navbar navbar-expand-lg navbar-light bg-success fixed-top">
           <div className="container-fluid">
-            <Link className="navbar-brand logo-and-name" to="/">
+            <Link className="navbar-brand d-flex justify-content-between align-items-center" to="/">
               <img
                 src={logo}
                 alt="Logo"
                 width="50"
                 height="52"
-                className="d-inline-block align-text-top"
+                className="d-inline-block"
               />
+              <div className="ml-5 name">Best Panda</div>
             </Link>
             <button
               className="navbar-toggler"
@@ -44,7 +45,7 @@ export default class Header extends Component {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
                     Home
@@ -55,11 +56,11 @@ export default class Header extends Component {
                     Menu
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/faq">
                     FAQ
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
