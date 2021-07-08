@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+.body {
+    padding-top: 6.5rem;
+  }
+ 
 /*styling for navbar */
 .navbar {
     margin-bottom: 200px;
