@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/js/src/collapse.js";
-import logo from "./logo.png";
+import logo from "./panda.png";
 import "../styles.css";
 export default class Header extends Component {
   state = {
