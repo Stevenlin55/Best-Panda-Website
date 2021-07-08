@@ -1,0 +1,43 @@
+[debug] [2021-07-08T04:50:47.994Z] ----------------------------------------------------------------------
+[debug] [2021-07-08T04:50:47.996Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-08T04:50:47.996Z] CLI Version:   9.14.0
+[debug] [2021-07-08T04:50:47.996Z] Platform:      win32
+[debug] [2021-07-08T04:50:47.996Z] Node Version:  v16.3.0
+[debug] [2021-07-08T04:50:47.997Z] Time:          Wed Jul 07 2021 23:50:47 GMT-0500 (Central Daylight Time)
+[debug] [2021-07-08T04:50:47.997Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-08T04:50:48.003Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-08T04:50:48.003Z] > authorizing via signed-in user (qingchen1517@gmail.com)
+[debug] [2021-07-08T04:50:48.003Z] [iam] checking project menu-9e7e7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-08T04:50:48.005Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-08T04:50:48.005Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-08T04:50:48.231Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 08 Jul 2021 04:50:47 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-08T04:50:48.252Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/menu-9e7e7:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-08T04:50:48.496Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 08 Jul 2021 04:50:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=81","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-08T04:50:48.499Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/menu-9e7e7/serviceAccounts/menu-9e7e7@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-07-08T04:50:48.690Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 08 Jul 2021 04:50:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-08T04:50:48.692Z] > refreshing access token with scopes: []
+[debug] [2021-07-08T04:50:48.692Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-08T04:50:48.899Z] <<< HTTP RESPONSE 200 {"date":"Thu, 08 Jul 2021 04:50:48 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-08T04:50:48.915Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/menu-9e7e7 [none]
+[debug] [2021-07-08T04:50:49.176Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/menu-9e7e7 200
+[debug] [2021-07-08T04:50:49.176Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/menu-9e7e7 {"projectId":"menu-9e7e7","projectNumber":"579999706376","displayName":"menu","name":"projects/menu-9e7e7","resources":{"hostingSite":"menu-9e7e7","storageBucket":"menu-9e7e7.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'menu-9e7e7'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[debug] [2021-07-08T04:50:49.341Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:363:5)
+    at validateString (node:internal/validators:119:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:113:45)
+    at getChildEnvironment (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.
