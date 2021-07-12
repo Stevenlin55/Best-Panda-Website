@@ -7,6 +7,13 @@ import Menu from './components/Menu';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer'
 import './styles.css'
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-MSKS6MJ'
+}
+
+TagManager.initialize(tagManagerArgs)
 export default class App extends Component {
   render() {
     return (
