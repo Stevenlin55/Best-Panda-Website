@@ -8,7 +8,9 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer'
 import './styles.css'
 import TagManager from 'react-gtm-module'
+import { hotjar } from 'react-hotjar';
 
+hotjar.initialize(2498446, 6);
 const tagManagerArgs = {
     gtmId: 'GTM-MSKS6MJ'
 }
