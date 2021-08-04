@@ -18,7 +18,7 @@ export default class Location extends Component {
               height: "400px",
               borderRadius: "21px 21px 21px 21px",
             }}
-            allowfullscreen=""
+            allowFullscreen=""
             loading="lazy"
           ></iframe>
         </div>

@@ -43,7 +43,6 @@ export default class Menu extends Component {
           price: doc.data().price,
           details: doc.data().description,
         }));
-        console.log(this.state.categories[i].items)
         this.setState({ loading: false }); //after fetching data, make sure to make screen not loading anymore
       }
     } catch (err) {
