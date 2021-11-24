@@ -34,9 +34,9 @@ export default class Delivery extends Component {
                 <div className="box text-center">
                   <span>Phone</span>
                   <h4 className="card-title text-center">
-                    Line 1: (847) 662-0066
+                    <a href="tel:8476620066">Line 1: (847) 662-0066</a>
                   </h4>
-                  <h4 className="card-title  pt-3">Line 2: (847) 662-0108</h4>
+                  <h4 className="card-title  pt-3"> <a href="tel:8476620108">Line 2: (847) 662-0108</a></h4>
                   <h5 className="card-title pt-4">
                     Call Line 2 if Line 1 does not work
                   </h5>

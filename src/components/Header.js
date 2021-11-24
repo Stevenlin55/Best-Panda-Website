@@ -6,6 +6,14 @@ import logo from "./panda.png";
 import "../styles.css";
 export default class Header extends Component {
 
+  //whenever link is clicked, navbar collapses
+  collapseNavbar() {
+    let navbar = document.getElementById("navbarSupportedContent");
+    let navbarButton = document.getElementById("navbar-btn");
+    navbar.className = "navbar-collapse collapse";
+    navbarButton.className = "navbar-toggler collapsed";
+  }
+
   render() {
     return (
       <div>
@@ -29,6 +37,7 @@ export default class Header extends Component {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              id="navbar-btn"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
@@ -38,12 +47,12 @@ export default class Header extends Component {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/">
+                  <Link className="nav-link" to="/" onClick={()=> this.collapseNavbar()}>
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/menu">
+                  <Link className="nav-link" to="/menu" onClick={()=> this.collapseNavbar()}>
                     Menu
                   </Link>
                 </li>
