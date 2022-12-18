@@ -5,8 +5,7 @@ import "bootstrap/js/src/collapse.js";
 import logo from "./panda.png";
 import "../styles.css";
 export default class Header extends Component {
-
-  //whenever link is clicked, navbar collapses
+  // Mobile Devices: whenever link is clicked, navbar collapses
   collapseNavbar() {
     let navbar = document.getElementById("navbarSupportedContent");
     let navbarButton = document.getElementById("navbar-btn");
@@ -19,7 +18,11 @@ export default class Header extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-success fixed-top">
           <div className="container-fluid">
-            <Link className="navbar-brand d-flex justify-content-between align-items-center" to="/">
+            <Link
+              className="navbar-brand d-flex justify-content-between align-items-center"
+              to="/"
+              onClick={() => this.collapseNavbar()}
+            >
               <img
                 src={logo}
                 alt="Logo"
@@ -47,20 +50,23 @@ export default class Header extends Component {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link" to="/" onClick={()=> this.collapseNavbar()}>
+                  <Link
+                    className="nav-link"
+                    to="/"
+                    onClick={() => this.collapseNavbar()}
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/menu" onClick={()=> this.collapseNavbar()}>
+                  <Link
+                    className="nav-link"
+                    to="/menu"
+                    onClick={() => this.collapseNavbar()}
+                  >
                     Menu
                   </Link>
                 </li>
-                {/* <li className="nav-item">
-                  <Link className="nav-link" to="/faq">
-                    FAQ
-                  </Link>
-                </li> */}
               </ul>
             </div>
           </div>
