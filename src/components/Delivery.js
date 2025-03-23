@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import GrubHub from "./grubhub-logo.png";
 import DoorDash from "./doordash-logo.png";
+import UberEats from "./uber-eats-logo.jpg";
 import "../styles.css";
 import { Link } from "react-router-dom";
 export default class Delivery extends Component {
@@ -32,7 +32,7 @@ export default class Delivery extends Component {
             <div className="row">
 
               {/* Phone div */}
-              <div className="col-md-6">
+              <div className="col-lg-4">
                 <div className="box text-center">
                   <span>Phone</span>
                   <h4 className="card-title text-center">
@@ -49,13 +49,13 @@ export default class Delivery extends Component {
               </div>
 
               {/* Doordash div */}
-              <div className="col-md-6 mt-lg-0">
+              <div className="col-lg-4 mt-4 mt-lg-0">
                 <div className="box text-center">
                   <span>DoorDash</span>
                   <img
                     src={DoorDash}
                     alt="Logo"
-                    width="50%"
+                    width="60%"
                     height="40%"
                     className="d-inline-block align-text-top"
                   />
@@ -75,6 +75,36 @@ export default class Delivery extends Component {
                   </Link>
                 </div>
               </div>
+
+              {/* Uber div */}
+              <div className="col-lg-4 mt-4 mt-lg-0">
+                 <div className="box text-center">
+                   <span>Uber Eats</span>
+                   <img
+                     src={UberEats}
+                     alt="Logo"
+                     width="60%"
+                     height="40%"
+                     className="d-inline-block align-text-top"
+                   />
+                   <Link
+                     to={{
+                       pathname:
+                         "https://www.ubereats.com/store/best-panda-chinese-restaurant/7cIq49EWWPWHs5QvOgetFA",
+                     }}
+                     target="Uber Eats"
+                   >
+                     <button
+                       type="button"
+                       className="w-100 btn btn-lg btn-dark mt-3 delivery-btn"
+                     >
+                       Click for Uber Eats
+                     </button>
+                   </Link>
+                 </div>
+               </div>
+
+
             </div>
           </div>
         </section>
