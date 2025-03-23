@@ -26,25 +26,25 @@ export default class Hours extends Component {
           >
             <ul className="list-unstyled opening-hours">
               <li>
-                Sunday <span className="pull-right">12:00PM — 9:00PM</span>
+                Sunday <span className="pull-right">12:00PM — 8:30PM</span>
               </li>
               <li>
                 Monday <span className="pull-right">Closed</span>
               </li>
               <li>
-                Tuesday <span className="pull-right">11:30AM — 9:00PM</span>
+                Tuesday <span className="pull-right">11:30AM — 8:30PM</span>
               </li>
               <li>
-                Wednesday <span className="pull-right">11:30AM — 9:00PM</span>
+                Wednesday <span className="pull-right">11:30AM — 8:30PM</span>
               </li>
               <li>
-                Thursday <span className="pull-right">11:30AM — 9:00PM</span>
+                Thursday <span className="pull-right">11:30AM — 8:30PM</span>
               </li>
               <li>
-                Friday <span className="pull-right">11:30AM — 9:30PM</span>
+                Friday <span className="pull-right">11:30AM — 9:00PM</span>
               </li>
               <li>
-                Saturday <span className="pull-right">11:30AM — 9:30PM</span>
+                Saturday <span className="pull-right">11:30AM — 9:00PM</span>
               </li>
             </ul>
           </div>

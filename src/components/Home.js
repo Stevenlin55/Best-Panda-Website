@@ -7,13 +7,12 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-          <Delivery />
+        <Delivery />
 
         <div className="row align-items-md-stretch">
           <Location />
           <Hours />
         </div>
-        
       </div>
     );
   }
